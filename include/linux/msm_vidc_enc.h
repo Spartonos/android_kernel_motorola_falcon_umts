@@ -510,6 +510,10 @@ struct venc_ioctl_msg{
 #define VEN_IOCTL_SET_SPS_PPS_FOR_IDR \
 	_IOW(VEN_IOCTLBASE_ENC, 64, struct venc_ioctl_msg)
 
+/*IOCTL params:SET: InputData - unsigned int, OutputData - NULL*/
+#define VEN_IOCTL_SET_SPS_PPS_FOR_IDR \
+	_IOW(VEN_IOCTLBASE_ENC, 65, struct venc_ioctl_msg)
+
 struct venc_range {
 	unsigned long	max;
 	unsigned long	min;
